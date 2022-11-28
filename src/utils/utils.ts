@@ -19,4 +19,4 @@ export const weatherDataURL = (lat: number, lon: number) =>
   `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${WEATHER_KEY}`;
 
 export const locationDataURL = (input: string) =>
-  `http://api.openweathermap.org/geo/1.0/direct?q=${input}&limit=5&appid=${WEATHER_KEY}`;
+  `https://api.openweathermap.org/geo/1.0/direct?q=${input}&limit=5&appid=${WEATHER_KEY}`;
