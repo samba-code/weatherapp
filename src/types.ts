@@ -14,7 +14,10 @@ export type WeatherData = {
 };
 
 export type Location = {
-  label: string;
+  label?: string;
   lat: number;
   lon: number;
+  name: string;
+  state: string;
+  country: string;
 };

@@ -1,3 +1,5 @@
+import { Location } from "../types";
+
 export const padTime = (num: Number) => num.toString().padStart(2, "0");
 
 export const makeTimeFromUnix = (seconds: number) => {
@@ -7,7 +9,7 @@ export const makeTimeFromUnix = (seconds: number) => {
   return `${padTime(hours)}:${padTime(minutes)}`;
 };
 
-export const makeLabel = (loc: any) => {
+export const makeLabel = (loc: Location) => {
   return `${loc.name}, ${loc?.state ?? "no state"}, ${loc.country}`;
 };
 
